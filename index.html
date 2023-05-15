@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Single Page Applications for GitHub Pages - Web Semantics, Inc.</title>
+    <title>Retro SPA - access retro games from emujs templated html web single page application </title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
     <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
@@ -26,11 +26,11 @@
     <script>
       $(function() {
           if (location.href != redirect) {
-              $('#message').html('Coming at you from')
+              $('#message').html('')
               $('#message-detail').html(location.href)
           } else {
             $('#message').html('')
-            $('#message-detail').html('Still here at the index.html file')
+            $('#message-detail').html('im just a dumb yellow marker - ignore me ')
           }
       })
     </script>
@@ -58,6 +58,7 @@
                 </div>
 
                 <p>I'll help you to play the best retro games ever made </p>
+                <p>Select a game to load AND be patient please ,people worked very hard to get you served in seconds .  </p>
                 <a>
                 <button onclick="displayIframeMVC()">Marvel VS Capcom</button>
                 <div id="iframeDisplay"></div>  
