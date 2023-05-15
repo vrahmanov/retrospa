@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Single Page Applications for GitHub Pages - Web Semantics, Inc.</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/lib/base-64/base64.js"></script>
+    <script type="text/javascript" src="assets/lib/larder/larder.js"></script>
+    <script type="text/javascript" src="assets/lib/gitters/gitters.js"></script>
+    <script type="text/javascript" src="assets/lib/bragit/bragit.js"></script>
+    <script>var redirect = location.href</script>
+    <script type="text/javascript" src="ghspa.js"></script>
+    <script>
+        function displayIframeTekken3() {
+            document.getElementById("iframeDisplay").innerHTML = '<iframe src="https://www.retrogames.cc/embed/40238-tekken-3.html" width="720" height="480" frameborder="no" allowfullscreen="true" webkitallowfullscreen="false" mozallowfullscreen="true" scrolling="no"></iframe>';
+        }
+        function displayIframeMVC() {
+            document.getElementById("iframeDisplay").innerHTML = '<iframe src="https://www.retrogames.cc/embed/9123-marvel-vs-capcom-clash-of-super-heroes-980123-usa.html" width="720" height="480" frameborder="no" allowfullscreen="true" webkitallowfullscreen="false" mozallowfullscreen="true" scrolling="no"></iframe>';
+        }
+    </script>
+    <script>
+      $(function() {
+          if (location.href != redirect) {
+              $('#message').html('Coming at you from')
+              $('#message-detail').html(location.href)
+          } else {
+            $('#message').html('')
+            $('#message-detail').html('Still here at the index.html file')
+          }
+      })
+    </script>
+</head>
+<body>
+    <div class="pusher">
+        <div class="ui vertical masthead center aligned segment">
+
+            <div class="ui container">
+                <div class="ui large secondary menu">
+                    <div class="right item">
+                        <a class="item" href="/retrospa">Home</a>
+                        <a class="item" href="/retrospa/about">About</a>
+                        <a class="item" href="/retrospa/contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui text hero container">
+                <img src="assets/img/2.png">
+                <h2 class="ui header">Retro EmulatorJs Single Page Application.</h2>
+                <div class="ui right big yellow image label">
+                    <i class="info icon"></i>
+                    <span id="message"></span>
+                    <div class="detail" id="message-detail">Let me tell you something!</div>
+                </div>
+
+                <p>I'll help you to play the best retro games ever made </p>
+                <a>
+                <button onclick="displayIframeMVC()">Marvel VS Capcom</button>
+                <div id="iframeDisplay"></div>  
+                </a>
+                <a>
+                <button onclick="displayIframeTekken3()">Tekken3</button>
+                <div id="iframeDisplay"></div> 
+                </a>
+                <a>
+                <button onclick="displayIframeMVC()">SpiderMan-UploadInProgress</button>
+                <div id="iframeDisplay"></div>  
+                </a>
+                <a>
+                <button onclick="displayIframeMVC()">UploadInProgress</button>
+                <div id="iframeDisplay"></div>  
+                </a>
+            </div>
+
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui text container">
+                <h3 class="ui header">Single Page Application</h3>
+                <p> SPA is a web application or web site that fits on a single web page with the goal of providing a more fluid user experience similar to a desktop application. In a SPA, either all necessary code, HTML, JavaScript and CSS is retrieved with
+                    a single page load or the appropriate resources are dynamically loaded and added to the page as necessary, usually in response to user actions.</p>
+                <a class="ui huge yellow button" href="https://en.wikipedia.org/wiki/Single-page_application">Read More</a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
